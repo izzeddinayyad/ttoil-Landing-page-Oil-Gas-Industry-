@@ -79,23 +79,52 @@ section.hero-section {
   font-weight: 400;
 }
 /* about our company section+++++++++++++++++++++++++++++  */
-.about-section{
-    padding: 16px;
+.about-section {
+  padding: 16px;
 }
-.about-section h3{
-    font-size: 12px;
-    color: var(--Caramel-color);
-    text-decoration: underline;
-    margin-bottom: 16px;
-    font-weight: 400;
+.about-section h3 {
+  font-size: 12px;
+  color: var(--Caramel-color);
+  text-decoration: underline;
+  margin-bottom: 16px;
+  font-weight: 400;
 }
-.about-section h2{
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 16px;
+.about-section h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 .about-section p {
+  margin-bottom: 16px;
+  font-size: 11px;
+  color: var(--Gray-color);
+}
+/* what-can-we-do section+++++++++++++++++++++++++++++  */
+.what-can-we-do {
+  background-image: url("../images/unsplash_BCceraTWbhc.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  padding: 16px;
+  text-align: center;
+  height: auto;
+}
+.what-can-we-do h2{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--Caramel-color);
+    margin-bottom: 8px;
+}
+.what-can-we-do h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--white-color);
     margin-bottom: 16px;
-    font-size: 11px;
-    color: var(--Gray-color);
+}
+.what-can-we-do p{
+    font-size: 8.5px;
+    color: var(--white-color);
+    font-weight: 200;
+    margin-bottom:20px ;
 }
