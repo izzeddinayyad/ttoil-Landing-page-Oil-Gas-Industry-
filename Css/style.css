@@ -115,6 +115,7 @@ section.hero-section {
     font-weight: 400;
     color: var(--Caramel-color);
     margin-bottom: 8px;
+    text-decoration: underline;
 }
 .what-can-we-do h3{
     font-size: 20px;
@@ -125,6 +126,30 @@ section.hero-section {
 .what-can-we-do p{
     font-size: 8.5px;
     color: var(--white-color);
+    font-weight: 200;
+    margin-bottom:20px ;
+}
+
+/* service section+++++++++++++++++++++++++++++  */
+.service-section{
+    padding: 16px;
+}
+.service-section h2{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--Caramel-color);
+    margin-bottom: 8px;
+    text-decoration: underline;
+}
+.service-section h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--black-color);
+    margin-bottom: 16px;
+}
+.service-section p{
+    font-size: 13px;
+    color: var(--Gray-color);
     font-weight: 200;
     margin-bottom:20px ;
 }
