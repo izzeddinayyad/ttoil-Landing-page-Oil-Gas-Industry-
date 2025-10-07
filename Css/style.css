@@ -26,6 +26,12 @@ body {
 .justify-content-spaceBetween {
   justify-content: space-between;
 }
+.dir-column {
+  flex-direction: column;
+}
+.wrap{
+    flex-wrap: wrap;
+}
 .container-90 {
   width: 90%;
   margin: 0 auto;
@@ -110,46 +116,101 @@ section.hero-section {
   text-align: center;
   height: auto;
 }
-.what-can-we-do h2{
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--Caramel-color);
-    margin-bottom: 8px;
-    text-decoration: underline;
+.what-can-we-do h2 {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--Caramel-color);
+  margin-bottom: 8px;
+  text-decoration: underline;
 }
-.what-can-we-do h3{
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--white-color);
-    margin-bottom: 16px;
+.what-can-we-do h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-bottom: 16px;
 }
-.what-can-we-do p{
-    font-size: 8.5px;
-    color: var(--white-color);
-    font-weight: 200;
-    margin-bottom:20px ;
+.what-can-we-do p {
+  font-size: 8.5px;
+  color: var(--white-color);
+  font-weight: 200;
+  margin-bottom: 20px;
 }
 
 /* service section+++++++++++++++++++++++++++++  */
-.service-section{
-    padding: 16px;
+.service-section {
+  padding: 16px;
 }
-.service-section h2{
+.service-section h2 {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--Caramel-color);
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+.service-section h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black-color);
+  margin-bottom: 16px;
+}
+.service-section p {
+  font-size: 13px;
+  color: var(--Gray-color);
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+/* product section+++++++++++++++++++++++++++++  */
+
+.products {
+  background-color: var(--black-color);
+  border-radius: 20px;
+  padding: 16px;
+  text-align: center;
+}
+.products h2{
     font-size: 12px;
-    font-weight: 400;
     color: var(--Caramel-color);
-    margin-bottom: 8px;
+    font-weight: 300;
     text-decoration: underline;
+    margin-bottom: 8px;
 }
-.service-section h3{
+.product h3{
     font-size: 20px;
-    font-weight: 500;
-    color: var(--black-color);
+    color: var(--white-color);
     margin-bottom: 16px;
 }
-.service-section p{
-    font-size: 13px;
-    color: var(--Gray-color);
-    font-weight: 200;
-    margin-bottom:20px ;
+.product img{
+    width: 100%;
+    margin-bottom: 16px;
+}
+.product p {
+    font-size: 11.4px;
+    color: var(--white-color);
+    margin-bottom: 15px;
+}
+.product ul{
+    margin-bottom: 16px;
+    /* align-self: ; */
+    /* align-items: center; */
+}
+.product ul li{
+    color: var(--white-color);
+    font-size: 12px;
+    width: 33%;
+    text-align: left;
+    display: inline-block;
+    list-style: none;
+    padding: 8px;
+     position: relative;
+    padding-left: 18px; 
+    /* margin-bottom: 6px; */
+}
+.product ul li::before{
+    content: '●';           
+    font-size: 20px;        
+    position: absolute;
+    left: 0;               
+    top: 2px;
+    line-height: 1;
 }
