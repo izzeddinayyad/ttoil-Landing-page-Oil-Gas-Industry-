@@ -223,6 +223,8 @@ section.hero-section {
   font-size: 12px;
   font-weight: 200;
   margin-bottom: 16px;
+  text-decoration: underline
+
 }
 .location h2 {
   color: var(--black-color);
@@ -248,8 +250,6 @@ section.hero-section {
   overflow: hidden;
   width: 100%;
   margin-bottom: 20px;
-  /* align-items: center; */
-  /* list-style: disc !important; */
 }
 .location ul li {
   display: flex;
@@ -266,4 +266,108 @@ section.hero-section {
   to {
     transform: translateX(-50%);
   }
+}
+/* contact section+++++++++++++++++++++++++++++  */
+.contact{
+  padding: 16px;
+  text-align: center;
+  background-image: url('../images/contactUs.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  /* padding: 16px; */
+  text-align: center;
+  height: auto;
+}
+.contact h3{
+  font-size: 12px;
+  font-weight: 200;
+  color: var(--Caramel-color);
+  text-decoration: underline;
+  margin-bottom: 16px;
+
+}
+.contact h2{
+  font-size: 20px;
+  color: var(--white-color);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.contact form{
+  gap: 16px;
+}
+.contact form input::placeholder,textarea::placeholder{
+  color: var(--white-color);
+
+}
+.contact form input ,textarea{
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--white-color);
+  border-radius: 8px;
+  padding: 14px;
+  text-align: center;
+}
+.contact form button{
+  background: var(--white-color);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+footer{
+  padding: 16px;
+}
+footer .logo-section{
+  margin: 15px 0;
+}
+footer .logo-section img{
+  width: auto;
+  margin-left: 0;
+}
+footer .logo-section .social-media{
+  width: 60%;
+  margin-left: 88px;
+  
+}
+footer .logo-section .social-media img{
+  margin:  5px;
+  width: auto;
+}
+footer .location-section{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.location-section h2{
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--black-color);
+  width: 40%;
+}
+.location-section p{
+  font-size: 10px;
+  color: var(--black-color);
+  font-weight: 400;
+  margin-left: 88px;
+}
+
+.contact-section{
+  margin: 15px 0;
+  border-bottom: 2px solid var(--black-color);
+  padding-bottom: 16px;
+}
+.contact-section h2{
+  font-size: 12px;
+  color: var(--black-color);
+  font-weight: 400;
+  width: 40%;
+}
+.contact-section p{
+  font-size: 10px;
+  margin-left: 88px;
+}
+.copy-right-section span{
+  font-size: 9px;
+  text-align: center;
+  margin: 0 auto;
 }
