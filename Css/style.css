@@ -1,3 +1,6 @@
+/* Start with the mobile screen design,
+ then set the breakpoint for the
+  larger screen. */
 * {
   margin: 0;
   padding: 0;
@@ -16,10 +19,8 @@ body {
   --Gray-color: #b4b4b4;
   --Caramel-color: #c1844d;
 }
-
 /* ===============mobile first================  */
 /* general styling */
-
 .flex {
   display: flex;
 }
@@ -36,15 +37,51 @@ body {
   width: 90%;
   margin: 0 auto;
 }
-/* .container-80{
-    width: 85%;
-    margin: 0 auto;
-} */
+h3 {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--Caramel-color);
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: var(--black-color);
+}
+p {
+  color: var(--white-color);
+  font-size: 8.5px;
+  font-weight: 400;
+}
+p.inWhite {
+  margin-bottom: 16px;
+  font-size: 11px;
+  color: var(--Gray-color);
+}
+section.hero-section,
+.what-can-we-do,
+.contact {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  padding: 16px;
+  text-align: center;
+  height: auto;
+}
 w-100 {
   width: 100%;
 }
 a {
   text-decoration: none;
+  color: var(--white-color);
+}
+button{
+  background:none;
+  border: 0;
+  cursor: pointer;
 }
 /* header section+++++++++++++++++++++++++++++  */
 header {
@@ -56,112 +93,73 @@ header .menu a span {
   font-weight: 500;
   margin-right: 4px;
 }
+.navbar{
+  background: var(--black-color);
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  height: 100vh;
+  transform: translate(100%);
+  transition:transform 0.3s ease-in-out;
+}
+.navbar.active {
+    transform: translateX(0); 
+}
+.navbar .nav-head{
+  margin-bottom: 40px;
+}
+.navbar .nav-links{
+  list-style: none;
+  gap: 30px;
+  border-bottom:1px solid var(--white-color) ;
+  padding-bottom: 48px;
+}
+.navbar .nav-links li a{
+  /* color: var(--Caramel-color); */
+      transition: background-color 0.3s;
+
+}
+.navbar .nav-links li a:hover{
+  color: var(--Caramel-color);
+}
+.navbar .nav-footer h3{
+  color: var(--Gray-color);
+  text-decoration: none;
+  font-size: 12px;
+  /* margin: 15px 0; */
+  padding: 20px;
+  text-align: center;
+
+}
+.navbar .nav-footer .social-media img{
+  margin: 0 auto;
+  width: 100%;
+  padding:  0 50px;
+}
 
 /* hero section+++++++++++++++++++++++++++++  */
 section.hero-section {
   background-image: url("../images/oillllll 1.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 20px;
-  padding: 16px;
-  text-align: center;
-  height: auto;
-}
-.hero-section h3 {
-  color: var(--Caramel-color);
-  font-size: 14px;
-  font-weight: 400;
-  text-decoration: underline;
-}
-.hero-section h2 {
-  color: var(--white-color);
-  font-size: 20px;
-  font-weight: 700;
-}
-.hero-section p {
-  color: var(--white-color);
-  font-size: 8.5px;
-  font-weight: 400;
 }
 /* about our company section+++++++++++++++++++++++++++++  */
 .about-section {
   padding: 16px;
 }
-.about-section h3 {
-  font-size: 12px;
-  color: var(--Caramel-color);
-  text-decoration: underline;
-  margin-bottom: 16px;
-  font-weight: 400;
-}
-.about-section h2 {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 16px;
-}
-.about-section p {
-  margin-bottom: 16px;
-  font-size: 11px;
-  color: var(--Gray-color);
-}
 /* what-can-we-do section+++++++++++++++++++++++++++++  */
 .what-can-we-do {
   background-image: url("../images/unsplash_BCceraTWbhc.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 20px;
-  padding: 16px;
-  text-align: center;
-  height: auto;
 }
-.what-can-we-do h2 {
-  font-size: 12px;
-  font-weight: 400;
-  color: var(--Caramel-color);
-  margin-bottom: 8px;
-  text-decoration: underline;
-}
-.what-can-we-do h3 {
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--white-color);
-  margin-bottom: 16px;
-}
-.what-can-we-do p {
-  font-size: 8.5px;
-  color: var(--white-color);
-  font-weight: 200;
-  margin-bottom: 20px;
-}
-
 /* service section+++++++++++++++++++++++++++++  */
 .service-section {
   padding: 16px;
 }
-.service-section h2 {
-  font-size: 12px;
-  font-weight: 400;
-  color: var(--Caramel-color);
-  margin-bottom: 8px;
-  text-decoration: underline;
-}
-.service-section h3 {
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--black-color);
-  margin-bottom: 16px;
-}
-.service-section p {
-  font-size: 13px;
-  color: var(--Gray-color);
-  font-weight: 200;
-  margin-bottom: 20px;
-}
-
 /* product section+++++++++++++++++++++++++++++  */
-
 .products {
   background-color: var(--black-color);
   border-radius: 20px;
@@ -170,25 +168,11 @@ section.hero-section {
   margin-bottom: 24px;
 }
 .products h2 {
-  font-size: 12px;
-  color: var(--Caramel-color);
-  font-weight: 300;
-  text-decoration: underline;
-  margin-bottom: 8px;
-}
-.product h3 {
-  font-size: 20px;
   color: var(--white-color);
-  margin-bottom: 16px;
 }
 .product img {
   width: 100%;
   margin-bottom: 16px;
-}
-.product p {
-  font-size: 11.4px;
-  color: var(--white-color);
-  margin-bottom: 15px;
 }
 .product ul {
   margin-bottom: 16px;
@@ -217,25 +201,6 @@ section.hero-section {
 /* location section+++++++++++++++++++++++++++++  */
 .location {
   padding: 16px;
-}
-.location h3 {
-  color: var(--Caramel-color);
-  font-size: 12px;
-  font-weight: 200;
-  margin-bottom: 16px;
-  text-decoration: underline
-
-}
-.location h2 {
-  color: var(--black-color);
-  font-size: 20px;
-  font-weight: 100;
-  margin-bottom: 16px;
-}
-.location p {
-  font-size12px: ;
-  color: var(--Gray-color);
-  margin-top: 16px;
 }
 .location img {
   width: 100%;
@@ -268,105 +233,75 @@ section.hero-section {
   }
 }
 /* contact section+++++++++++++++++++++++++++++  */
-.contact{
-  padding: 16px;
-  text-align: center;
-  background-image: url('../images/contactUs.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 20px;
-  /* padding: 16px; */
-  text-align: center;
-  height: auto;
+.contact {
+  background-image: url("../images/contactUs.png");
 }
-.contact h3{
-  font-size: 12px;
-  font-weight: 200;
-  color: var(--Caramel-color);
-  text-decoration: underline;
-  margin-bottom: 16px;
-
-}
-.contact h2{
-  font-size: 20px;
+.contact h2 {
   color: var(--white-color);
-  font-weight: 500;
-  margin-bottom: 16px;
 }
-.contact form{
+.contact form {
   gap: 16px;
 }
-.contact form input::placeholder,textarea::placeholder{
+.contact form input::placeholder,
+textarea::placeholder {
   color: var(--white-color);
-
 }
-.contact form input ,textarea{
+.contact form input,
+textarea {
   background: rgba(255, 255, 255, 0.3);
   border: 1px solid var(--white-color);
   border-radius: 8px;
   padding: 14px;
   text-align: center;
 }
-.contact form button{
+.contact form button {
   background: var(--white-color);
   border-radius: 8px;
   padding: 14px;
 }
 
-footer{
+footer {
   padding: 16px;
 }
-footer .logo-section{
+footer .logo-section {
   margin: 15px 0;
 }
-footer .logo-section img{
+footer .logo-section img {
   width: auto;
   margin-left: 0;
 }
-footer .logo-section .social-media{
+footer .logo-section .social-media {
   width: 60%;
   margin-left: 88px;
-  
 }
-footer .logo-section .social-media img{
-  margin:  5px;
+footer .logo-section .social-media img {
+  margin: 5px;
   width: auto;
 }
-footer .location-section{
+footer .location-section {
   display: flex;
   justify-content: space-between;
   margin: 15px 0;
 }
-.location-section h2{
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--black-color);
+.location-section h2,
+.contact-section h2 {
   width: 40%;
+  font-size: 12px;
 }
-.location-section p{
-  font-size: 10px;
-  color: var(--black-color);
-  font-weight: 400;
+.location-section p {
   margin-left: 88px;
 }
 
-.contact-section{
+.contact-section {
   margin: 15px 0;
   border-bottom: 2px solid var(--black-color);
   padding-bottom: 16px;
 }
-.contact-section h2{
-  font-size: 12px;
-  color: var(--black-color);
-  font-weight: 400;
-  width: 40%;
-}
-.contact-section p{
+.contact-section p {
   font-size: 10px;
   margin-left: 88px;
 }
-.copy-right-section span{
+.copy-right-section span {
   font-size: 9px;
   text-align: center;
   margin: 0 auto;
