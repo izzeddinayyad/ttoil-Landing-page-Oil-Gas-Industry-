@@ -351,25 +351,20 @@
     </footer>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // 1. تحديد العناصر باستخدام الـ IDs الجديدة
         const openMenuButton = document.getElementById("openMenuBtn");
         const closeMenuButton = document.getElementById("closeMenuBtn");
         const mainNavbar = document.getElementById("mainNavbar");
 
-        // التأكد من وجود جميع العناصر قبل إضافة الـ Event Listeners
         if (openMenuButton && closeMenuButton && mainNavbar) {
-          // 2. وظيفة فتح القائمة (بالضغط على زر MENU)
           openMenuButton.addEventListener("click", function (event) {
-            event.preventDefault(); // لمنع انتقال الرابط إذا كان #
-            mainNavbar.classList.add("active"); // إضافة كلاس 'active' لإظهارها
+            event.preventDefault();
+            mainNavbar.classList.add("active");
           });
 
-          // 3. وظيفة إغلاق القائمة (بالضغط على أيقونة X/Exit)
           closeMenuButton.addEventListener("click", function () {
-            mainNavbar.classList.remove("active"); // إزالة كلاس 'active' لإخفائها
+            mainNavbar.classList.remove("active");
           });
 
-          // **اختياري:** إغلاق القائمة عند النقر على أي رابط فيها
           const navLinks = mainNavbar.querySelectorAll(".nav-links a");
           navLinks.forEach((link) => {
             link.addEventListener("click", function () {
